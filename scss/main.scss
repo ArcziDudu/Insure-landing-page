@@ -1,0 +1,283 @@
+@import './colors';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    .shadow-mobile{
+        display: none;
+    }
+    .nav{
+        display: flex;
+        width: 100vw;
+        justify-content: space-between;
+        max-width: 1440px;
+        padding: 21px 165px 19px;
+        .bar{
+            display: none;
+            cursor: pointer;
+        }
+        .close{
+            display: none;
+        }
+        .logo{
+            width: 111px;
+            height: 18px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .menu{
+            display: flex;
+            p{
+                text-transform: uppercase;
+                font-family: 'Karla';
+                margin-right: 25px;
+                margin-top: 13px;
+                font-weight: 700;
+                font-size: 13px;
+                color: $text;
+                cursor: pointer;
+                &:hover{
+                    color: $BgMain;
+                }
+            }
+            .plans{
+                color: $BgMain;
+                font-family: 'Karla';
+                width: 146px;
+                height: 40px;
+                font-weight: 700;
+                font-size: 13px;
+                border: 1.5px solid #2C2830;
+                background: $White;
+                cursor: pointer;
+                transition: all .2s;
+                text-transform: uppercase;
+                &:hover{
+                    background: $BgMain;
+                    color: $White;
+                }
+            }
+        }
+    }
+    .header{
+        width: 100vw;
+        height: 600px;
+        background-color: $BgBox;
+        .hero{
+            position: absolute;
+            left: 735px;
+            top: 185px;
+            width: 540px;
+            height: 650px;
+        }
+        .line{
+            position: absolute;
+            width: 150px;
+            height: 1px;
+            left: 165px;
+            top: 185px;
+            background-color: $White;
+        }
+        .info-box{
+            position: absolute;
+            width: 540px;
+            height: 304px;
+            left: 165px;
+            top: 249px;
+            .title{
+                font-family: 'DM Serif Display';
+                font-size: 72px;
+                color: $White;
+                line-height: 64px;
+                margin-bottom: 16px;
+            }
+            .text{
+                font-family: 'Karla';
+                font-size: 16px;
+                line-height: 26px;
+                color: $White;
+            }
+            .active{
+                margin-top: 24px;
+                width: 146px;
+                height: 40px;
+                text-transform: uppercase;
+                background: none;
+                border: 1.5px solid $White;
+                color: $White;
+                cursor: pointer;
+                font-weight: 700;
+                font-size: 13px;
+                font-family: 'Karla';
+                letter-spacing: 1.5px;
+                transition: all .2s;
+                &:hover{
+                    background: $White;
+                    color: $BgMain;
+                }
+            }
+        }
+    }
+    .main{
+        position: absolute;
+        width: 1110px;
+        height: 474px;
+        left: 165px;
+        top: 985px;
+        .title{
+            font-size: 72px;
+            line-height: 64px;
+            font-family: 'DM Serif Display';
+            letter-spacing: -1px;
+            color: $BgMain;
+        }
+        .icon-box{
+display: flex;
+width: 1110px;
+height: 250px;
+justify-content: space-between;;
+        
+        .box{
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+            height: 250px;
+            margin-top: 96px;
+            .icon{
+                width: 86px;
+                margin-bottom: 32px;
+            }
+            .box-title{
+                font-size: 28px;
+                font-family: 'DM Serif Display';
+                color: $BgMain;
+                margin-bottom: 16px;
+            }
+            .text{
+                font-size: 16px;
+                line-height: 26px;
+                font-family: 'Karla';
+                color: $text;
+            }
+        }
+    }
+    }
+    .aside{
+        position: absolute;
+        width: 1110px;
+        height: 250px;
+        left: 165px;
+        top: 1617px;
+        background-color: $BgBox;
+        display: flex;
+        justify-content: space-between;
+        padding: 69px 80px 69px 81px;
+        .left{
+            width: 475px;
+            height: 112px;
+            .title{
+                font-family: 'DM Serif Display';
+                font-size: 56px;
+                line-height: 56px;
+                color: $White;
+                font-weight: 400;
+                letter-spacing: -0.777778px;
+            }
+        }
+        .right{
+            align-self: center;
+            width: 160px;
+            height: 40px;
+            border: 1.5px solid $White;
+            letter-spacing: 1.5px;
+            font-size: 13px;
+            font-family: 'Karla';
+            font-weight: 700;
+            color: $White;
+            background: none;
+            text-transform: uppercase;
+            cursor: pointer;
+            &:hover{
+                background: $White;
+                color: #2C2830;
+            }
+        }
+
+    }
+    .footer{
+        text-transform: uppercase;
+        position: absolute;
+        width: 1440px;
+        height: 393px;
+        left: 0px;
+        top: 2017px;
+        display: flex;
+        flex-direction: column;
+        background-color: $bgDown;
+        padding: 64px 165px;
+        .up{
+            display: flex;
+            justify-content: space-between
+        }
+        .social-box{
+            width: 144px;
+            height: 24px;
+            display: flex;
+            justify-content: space-between;
+            img{
+                width: 24px;
+                cursor: pointer;
+            }
+            .icon:hover{
+                background: #2C2830;
+            }
+        }
+        .line{
+            margin-top: 36px;
+            margin-bottom: 48px;
+            width: 1110px;
+            height: 1px;
+            left: 165px;
+            top: 2139px;
+            background: #DADADA;
+        }
+        .links{
+            width: 1110px;
+            height: 159px;
+            display: flex;
+            justify-content: space-between;
+            .box{
+                width: 225px;
+                .title{
+                    letter-spacing: 1.5px;
+                    font-weight: 700;
+                    font-size: 13px;
+                    color: $text;
+                    margin-bottom: 36px;
+                    font-family: 'Karla';
+                }
+                p{
+                    font-family: 'Karla';
+                    margin-bottom: 16px;
+                    font-weight: 700;
+                    font-size: 13px;
+                    line-height: 15px;
+                    letter-spacing: 1.5px;
+                    color: $BgBox;
+                    cursor: pointer;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+@import './mobile';

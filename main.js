@@ -1,19 +1,15 @@
-const bar = document.querySelector('.bar-menu');
-const shadowMenu = document.querySelector('.bar-container');
-const closeMenu = document.querySelector('.close-menu');
+const bar = document.querySelector('.bar');
+const shadow = document.querySelector('.shadow-mobile');
+const closeMenu = document.querySelector('.close');
 
-
-const open = () =>{
-    shadowMenu.style.display = 'block';
+const openMenu = () =>{
+    shadow.style.display = 'block';
     closeMenu.style.display = 'block';
 }
-const close = () =>{
-    shadowMenu.style.display = 'none';
+const closeShadow = () =>{
+    shadow.style.display = 'none';
     closeMenu.style.display = 'none';
 }
-
-shadowMenu.addEventListener('click', close)
-
-closeMenu.addEventListener('click', close)
-
-bar.addEventListener('click', open)
+shadow.addEventListener('click', closeShadow);
+closeMenu.addEventListener('click', closeShadow);
+bar.addEventListener('click', openMenu);

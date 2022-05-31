@@ -1,0 +1,276 @@
+@media(max-width: 809px){
+body{
+    display: flex;
+    justify-content: center;
+    background-color: $White;
+    .shadow-mobile{
+        display: block;
+        position: absolute;
+        width: 375px;
+        height: 587px;
+        top: 80px;
+        background: #2C2830;
+        z-index: 123;
+        display: flex;
+        justify-content: center;
+        .menu-mobile{
+height: 248px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+margin-top: 40px;
+p{
+    font-weight: 700;
+font-size: 20px;
+line-height: 40px;
+cursor: pointer;
+font-family: 'Karla';
+color: $White;
+text-transform: uppercase;
+text-align: center;
+letter-spacing: 1.36364px;
+}
+        }
+        .view{
+            margin: 0 auto;
+            width: 327px;
+            height: 56px;
+            cursor: pointer;
+            font-family: 'Karla';
+            font-weight: 700;
+            font-size: 20px;
+            color: $White;
+            text-transform: uppercase;
+            letter-spacing: 1.36364px;
+            background: none;
+            border: 1.5px solid #FFFFFF;
+        }
+        display: none;
+    }
+    .nav{
+        display: flex;
+        width: 100vw;
+        justify-content: space-between;
+        max-width: 1440px;
+        padding: 24px;
+        
+        .logo{
+            width: 112px;
+            height: 18px;
+            margin-top: 7px;
+        }
+        .bar{
+            display: block;
+        }
+            .close{
+                display: none;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 319px;
+    top: 24px;
+    cursor: pointer;
+    
+            }
+        .menu{
+            display: none;
+            p{
+                font-family: 'Karla';
+                margin-right: 25px;
+                margin-top: 13px;
+                font-weight: 700;
+                font-size: 13px;
+                color: $text;
+                cursor: pointer;
+                &:hover{
+                    color: $BgMain;
+                }
+            }
+            .plans{
+                color: $BgMain;
+                font-family: 'Karla';
+                width: 146px;
+                height: 40px;
+                font-weight: 700;
+                font-size: 13px;
+                border: 1.5px solid #2C2830;
+                background: $White;
+                cursor: pointer;
+                transition: all .2s;
+                &:hover{
+                    background: $BgMain;
+                    color: $White;
+                }
+            }
+        }
+    }
+    .header{
+        width: 100vw;
+        height: 500px;
+        background-color: $BgBox;
+        .mobile-bg{
+            position: absolute;
+            width: 375px;
+            height: 500px;
+            left: 0px;
+            top: 531px;
+            background-color: $BgBox;
+        }
+        .hero{
+            position: absolute;
+            width: 375px;
+            height: 451px;
+            left: 0px;
+            top: 80px;
+        }
+        .line{
+            position: absolute;
+            width: 150px;
+            height: 1px;
+            left: 113px;
+            top: 1171px;
+        }
+        .info-box{
+            position: absolute;
+            width: 327px;
+            height: 314px;
+            left: 24px;
+            top: 624px;
+            .title{               
+                font-size: 48px;
+                line-height: 48px;
+                margin-bottom: 16px;
+                text-align: center;
+            }
+            .text{
+                font-size: 16px;
+                line-height: 26px;
+                color: $White;
+                text-align: center;
+            }
+            .active{
+                margin-top: 32px;
+                position: absolute;
+                left: 27.83%;
+                right: 27.52%;
+                top: 87.26%;
+                bottom: 0%;
+            }
+        }
+    }
+    .main{
+        position: absolute;
+        width: 327px;
+        height: 1031px;
+        left: 24px;
+        top: 1171px;
+        .title{
+            font-size: 48px;
+            line-height: 48px;
+        }
+        .icon-box{
+display: flex;
+flex-direction: column;
+width: 327px;
+height: 862px;     
+        .box{
+            width: 327px;
+            height: 250px;
+            margin-top: 80px;
+            text-align: center;
+            .icon{
+                margin: 0 auto 32px;
+            }
+            .box-title{
+                margin-bottom: 16px;
+            }
+        }
+    }
+    }
+    .aside{
+        position: absolute;
+        width: 327px;
+        height: 344px;
+        left: 24px;
+        top: 2342px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 72px 24px;
+        .left{
+            width: 279px;
+            height: 120px;
+            .title{
+                font-size: 40px;
+                line-height: 40px;
+                letter-spacing: -0.555556px;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+        }
+        .right{
+            font-size: 13px;
+            font-family: 'Karla';
+            font-weight: 700;
+            color: $White;
+            background: none;
+            text-transform: uppercase;
+        }
+
+    }
+    .footer{
+        position: absolute;
+        width: 375px;
+        height: 1025px;
+        left: 0px;
+        top: 2826px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $bgDown;
+        padding: 88px 25px;
+        .up{
+            width: 144px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between
+        }
+        .social-box{
+            margin-top: 32px;
+            width: 144px;
+            height: 24px;
+            display: flex;
+            justify-content: space-between;
+            img{
+                width: 24px;
+                cursor: pointer;
+            }
+            .icon:hover{
+                background: #2C2830;
+            }
+        }
+        .line{
+            margin-top: 40px;
+            margin-bottom: 40px;
+            width: 327px;
+            height: 1px;
+            left: 23px;
+            top: 3028px;
+        }
+        .links{
+            width: 327px;
+            height: 159px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+            .box{
+                width: 225px;
+
+            }
+        }
+        
+    }
+}
+}
